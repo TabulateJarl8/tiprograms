@@ -1,0 +1,38 @@
+BackgroundOn WHITE
+ClrDraw
+-10→X
+10→C
+Lbl 1
+Line(X,-10,X,10,1,C)
+Line(-10,X,10,X,1,C+1)
+Line(-X,-10,-X,10,1,C+2)
+Line(-10,-X,10,-X,1,C+3)
+getKey→Z
+If Z=95
+Then
+C+1→C
+End
+If Z=85
+Then
+C–1→C
+End
+If Z=45
+Then
+Goto 2
+End
+X+0.1→X
+If X>=11
+Then
+-10→X
+10→Y
+If C<20
+Then
+C+1→C
+Else
+10→C
+End
+End
+Goto 1
+Lbl 2
+ClrDraw
+ClrHome

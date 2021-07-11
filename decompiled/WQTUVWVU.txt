@@ -1,0 +1,7 @@
+ClrHome
+Lbl 1
+Input ">",X
+X→X
+Disp X
+Goto 1
+

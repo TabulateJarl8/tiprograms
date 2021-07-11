@@ -1,0 +1,12 @@
+MATHPRINT
+Normal
+Float
+Degree
+Func
+Thick
+Sequential
+a+bi
+Full
+[n/d]
+AUTO
+ClockOn

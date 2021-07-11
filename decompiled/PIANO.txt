@@ -1,0 +1,68 @@
+-10→T
+ClrDraw
+BackgroundOff
+Line(-10,0,10,0,1,12)
+Repeat T=10
+T+2→T
+Line(T,0,T,-10,1,12)
+End
+-8.5→T
+Lbl 1
+If T>8.5
+Then
+Goto 2
+Else
+If T=-4.5 or T=3.5
+Then
+T+2→T
+Goto 1
+Else
+T→U
+Repeat U+1=T
+Line(T,0,T,-5,1,12)
+T+.1→T
+End
+T+1→T
+Goto 1
+Lbl 2
+9→Y
+0→X
+Line(-9,9,-9,2,1,12)
+Line(9,9,9,2,1,12)
+Repeat X=6
+X+1→X
+Line(-9,Y,9,Y,1,12)
+Y–1.8→Y
+End
+-8.3→T
+Repeat T=-7.5
+Line(T,4.1,T,2.9,1,12)
+T+.1→T
+End
+Line(T,2.9,T,7,1,12)
+2.9→B
+4.1→X
+0→Y
+Lbl 3
+T+1→T
+randInt(3,10)*1→X
+T→U
+X–1.2→B
+Y+1→Y
+If Y=8
+Then
+Goto 4
+Else
+Repeat T=U+1
+Line(T,B+.1,T,X,1,12)
+T+.1→T
+End
+If X>5
+Then
+Line(T,X,T,B–4,1,12)
+Goto 3
+Else
+Line(T,B,T,X+4,1,12)
+Goto 3
+Lbl 4
+

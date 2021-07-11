@@ -1,0 +1,24 @@
+ClrHome
+Input "CENTER X ",H
+Input "CENTER Y ",K
+Input "RADIUS ",R
+ClrHome
+Goto 1
+Lbl 1
+Input "X COORDINATE ",X
+Input "Y COORDINATE ",Y
+ClrHome
+X–H→G
+Y–K→I
+(G)^2→G
+(I)^2→I
+G+I→G
+(R)^2→J
+If G=J
+Then
+Disp "POINT ON CICLE"
+Goto 2
+Else
+Disp "POINT NOT ON CIRCLE"
+Goto 1
+Lbl 2

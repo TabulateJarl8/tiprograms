@@ -1,0 +1,99 @@
+ClrHome
+ClrDraw
+TextColor(BLACK)
+Text(20,50,"1–AM")
+Text(20,160,"2–PM")
+Repeat Z=92 or Z=93
+getKey→Z
+End
+If Z=92
+Then
+0→A
+Goto 1
+Else
+1→A
+Goto 1
+Lbl 1
+ClrDraw
+Text(20,15,"[1]–1      [2]–2      [3]–3      [4]–4      [5]–5")
+Text(50,13,"[6]–6      [7]–7      [8]–8      [9]–9      [0]–10")
+Text(80,85,"[.]–11      [-]–12")
+Lbl 2
+Repeat Z!=0
+getKey→Z
+End
+If Z=92
+Then
+1→X
+Goto 3
+Else
+If Z=93
+Then
+2→X
+Goto 3
+Else
+If Z=94
+Then
+3→X
+Goto 3
+Else
+If Z=82
+Then
+4→X
+Goto 3
+Else
+If Z=83
+Then
+5→X
+Goto 3
+Else
+If Z=84
+Then
+6→X
+Goto 3
+Else
+If Z=72
+Then
+7→X
+Goto 3
+Else
+If Z=73
+Then
+8→X
+Goto 3
+Else
+If Z=74
+Then
+9→X
+Goto 3
+Else
+If Z=102
+Then
+10→X
+Goto 3
+Else
+If Z=103
+Then
+11→X
+Goto 3
+Else
+If Z=104
+Then
+12→X
+Goto 3
+Else
+Goto 2
+Lbl 3
+If A=1
+Then
+X+12→X
+End
+Else
+End
+getTime→l1
+Input "MINUTE",B
+l1(1)→D
+l1(2)→E
+l1(3)→F
+X*60→X
+

@@ -1,0 +1,11 @@
+ClrHome
+Input Z
+1→I
+While I<Z
+If remainder(Z,I)=0
+Then
+Disp "",I,Z/I,"+",I+Z/I,"–",I–Z/I
+Pause 
+End
+I+1→I
+End

@@ -1,0 +1,67 @@
+ClrHome
+Repeat Z=25
+getKey→Z
+End
+Repeat Z=0
+getKey→Z
+End
+Repeat Z=25
+getKey→Z
+End
+Repeat Z=0
+getKey→Z
+End
+Repeat Z=34
+getKey→Z
+End
+Repeat Z=0
+getKey→Z
+End
+Repeat Z=34
+getKey→Z
+End
+Repeat Z=0
+getKey→Z
+End
+Repeat Z=24
+getKey→Z
+End
+Repeat Z=0
+getKey→Z
+End
+Repeat Z=26
+getKey→Z
+End
+Repeat Z=0
+getKey→Z
+End
+Repeat Z=24
+getKey→Z
+End
+Repeat Z=0
+getKey→Z
+End
+Repeat Z=26
+getKey→Z
+End
+Repeat Z=0
+getKey→Z
+End
+Repeat Z=42
+getKey→Z
+End
+Repeat Z=0
+getKey→Z
+End
+Repeat Z=41
+getKey→Z
+End
+Repeat Z=0
+getKey→Z
+End
+Repeat Z=105
+getKey→Z
+End
+Repeat Z=0
+getKey→Z
+End

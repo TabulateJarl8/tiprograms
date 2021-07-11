@@ -1,0 +1,6 @@
+ClrDraw
+AxesOff
+BorderColor 4
+Lbl 1
+Pxl-On( randInt(0,160),randInt(0,250),randInt(10,19)
+Goto 1

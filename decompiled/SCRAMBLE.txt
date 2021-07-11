@@ -1,0 +1,75 @@
+ClrHome
+0→T
+randInt(15,25)*1→N
+Lbl 1
+If T=N
+Then
+Goto 2
+Else
+Goto 3
+Lbl 3
+Pause 
+T+1→T
+Lbl 9
+randInt(1,12)*1→X
+If X=1
+Then
+Disp "                        R"
+Goto 1
+Else
+If X=2
+Then
+Disp "                        L"
+Goto 1
+Else
+If X=3
+Then
+Disp "                        F"
+Goto 1
+Else
+If X=4
+Then
+Disp "                        B"
+Goto 1
+Else
+If X=5
+Then
+Disp "                        U"
+Goto 1
+Else
+If X=6
+Then
+Disp "                        D"
+Goto 1
+Else
+If X=7
+Then
+Disp "                        R'"
+Goto 1
+Else
+If X=8
+Then
+Disp "                        L'"
+Goto 1
+Else
+If X=9
+Then
+Disp "                        F'"
+Goto 1
+Else
+If X=10
+Then
+Disp "                        B'"
+Goto 1
+Else
+If X=11
+Then
+Disp "                        U'"
+Goto 1
+Else
+If X=12
+Then
+Disp "                        D'"
+Goto 1
+Lbl 2
+Pause 

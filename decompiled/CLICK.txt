@@ -1,0 +1,9 @@
+ClrHome
+[theta]→X
+Lbl 1
+Pause 
+ClrHome
+X+1→X
+X→[theta]
+Disp X
+Goto 1

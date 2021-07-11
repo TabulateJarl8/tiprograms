@@ -1,0 +1,43 @@
+0→X
+0→Y
+10→C
+Lbl 1
+Pxl-On( Y,X,C
+getKey→Z
+If Z=24 and not(X=0)
+Then
+X–1→X
+End
+If Z=26 and not(X=264)
+Then
+X+1→X
+End
+If Z=25 and not(Y=0)
+Then
+Y–1→Y
+End
+If Z=34 and not(Y=164)
+Then
+Y+1→Y
+End
+If Z=31 and not(C=24)
+Then
+C+1→C
+End
+If Z=31 and C=24
+Then
+10→C
+End
+If Z=21 and C=10
+Then
+24→C
+End
+If Z=21 and not(C=10)
+Then
+C–1→C
+End
+If Z=45
+Then
+ClrDraw
+End
+Goto 1

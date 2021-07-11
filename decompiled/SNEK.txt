@@ -1,0 +1,12 @@
+Lbl 1
+Disp "*–––––"
+Disp "–*––––"
+Disp "––*–––"
+Disp "–––*––"
+Disp "––––*–"
+Disp "–––––*"
+Disp "––––*–"
+Disp "–––*––"
+Disp "––*–––"
+Disp "–*––––"
+Goto 1

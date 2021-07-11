@@ -1,0 +1,43 @@
+0→Y
+ClrHome
+ClrAllLists
+0→I
+Lbl 1
+If Y!=1
+Then
+If l1(1)=25
+Then
+If l1(2)=25
+Then
+If l1(3)=34
+Then
+If l1(4)=34
+Then
+If l1(5)=24
+Then
+If l1(6)=26
+Then
+If l1(8)=26
+Then
+If l1(9)=42
+Then
+If l1(10)=41
+Then
+If l1(11)=105
+1→Y
+Goto 1
+Else
+If Z=45
+Then
+ClrAllLists
+0→I
+Goto 1
+Else
+If Z!=0
+Then
+I+1→I
+Z→l1(I)
+Goto 1
+Else
+Goto 1
+End

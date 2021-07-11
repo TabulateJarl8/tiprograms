@@ -1,0 +1,22 @@
+Lbl 1
+Repeat Z=45
+Disp "KNEES"
+getKey→Z
+End
+Disp "POPOPOPOPOPOPOPOPOPOPOP"
+0→X
+Lbl 3
+If X=10
+Then
+Goto 1
+Else
+X+1→X
+getKey→Z
+If Z=45
+Then
+Goto 2
+Else
+Goto 3
+End
+Goto 1
+Lbl 2

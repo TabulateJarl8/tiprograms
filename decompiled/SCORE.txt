@@ -1,0 +1,10 @@
+ClrHome
+Input "NUMBER OF QUESTIONS> ",N
+Disp ""
+Disp "NUMBER OF INCORRECT"
+Input "QUESTIONS> ",X
+N–X→X
+100/N→N
+N*X→X
+ClrHome
+Disp "SCORE:",X

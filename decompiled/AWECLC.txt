@@ -1,0 +1,126 @@
+0→J
+ClrHome
+TextColor(15)
+BackgroundOn WHITE
+GridOff
+AxesOff
+ClrDraw
+Text(150,120,"PRESS 'CLEAR' TO EXIT")
+TextColor(12)
+Lbl 1
+getKey→X
+If X=45
+Then
+Goto 6
+Else
+Goto 4
+Lbl 4
+Line(rand*10,rand*10,rand*10,rand*10,1,randInt(10,20))
+getTime→l1
+getDate→l2
+l1(1)→X
+l1(2)→Y
+l1(3)→Z
+l2(1)→A
+l2(2)→B
+l2(3)→C
+If X>12
+Then
+X–12→X
+Goto 5
+Else
+Lbl 5
+If X=0
+Then
+12→X
+End
+If Z=0
+Then
+ClrDraw
+End
+Lbl 7
+If Y<10
+Then
+1→J
+Text(0,0,X,":0",Y,":",Z)
+Goto 3
+Else
+0→J
+Text(0,0,X,":",Y,":",Z)
+Goto 3
+Lbl 3
+If Z>9
+Then
+Goto 8
+Else
+If J=1
+Then
+Text(0,0,X,":0",Y,":0",Z)
+Goto 8
+Else
+Text(0,0,X,":",Y,":0",Z)
+Goto 8
+Lbl 8
+dayOfWk(A,B,C)*1→D
+Line(-10,7.56,-3.275,7.56,12)
+Text(25,0,"DAY OF WEEK:")
+If D=1
+Then
+Text(43,0,"SUNDAY")
+Goto 2
+Else
+If D=2
+Then
+Text(43,0,"MONDAY")
+Goto 2
+Else
+If D=3
+Then
+Text(43,0,"TUESDAY")
+Goto 2
+Else
+If D=4
+Then
+Text(43,0,"WENDSDAY")
+Goto 2
+Else
+If D=5
+Then
+Text(43,0,"THURSDAY")
+Goto 2
+Else
+If D=6
+Then
+Text(43,0,"FRIDAY")
+Goto 2
+Else
+Text(43,0,"SATURDAY")
+Goto 2
+Lbl 2
+Line(-10,2.5,-3.275,2.5,12)
+Text(65,0,B,"/",C,"/",A)
+getTime→l2
+While l2(3)=l1(3)
+getTime→l2
+End
+Goto 1
+Lbl 6
+ClrDraw
+Text(30,115,"EXIT?")
+Text(50,85,"1–YES")
+Text(50,145,"2–NO")
+Repeat X=92 or X=93
+Line(-7.273,8.05,-7.273,-4.15,1,randInt(13,19))
+Line(-7.273,-4.15,6.83,-4.15,1,randInt(13,19))
+Line(6.83,-4.15,6.83,8.05,1,randInt(13,19))
+Line(6.83,8.05,-7.273,8.05,1,randInt(13,19))
+getKey→X
+End
+ClrHome
+If X=93
+Then
+ClrDraw
+Goto 1
+Else
+BackgroundOn BLACK
+ClrDraw

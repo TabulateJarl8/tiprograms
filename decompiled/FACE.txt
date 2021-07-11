@@ -1,0 +1,6 @@
+ClrHome
+Lbl 1
+Disp "Fix [box][dot]"
+Disp "[dot][dot][box]"
+Disp "[box]Fix Fix "
+Goto 1

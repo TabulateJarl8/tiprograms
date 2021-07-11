@@ -1,0 +1,33 @@
+BackgroundOn BLACK
+ClrDraw
+ClrHome
+Disp "   ARE YOU SUBSCRIBED TO  "
+Disp "        PEWDIEPIE?        "
+Disp "(1) YES             (2) NO"
+Repeat X=92 or X=93
+getKey→X
+End
+If X=92
+Then
+Disp "         GOOD JOB         "
+Pause 
+Goto 1
+Else
+Disp "        BAD BAD BAD       "
+Pause 
+Goto 1
+DispGraph
+Lbl 1
+Line(rand*10,rand*10,rand*10,rand*10,1,randInt(10,20))
+Line(rand*-10,rand*-10,rand*-10,rand*-10,1,randInt(10,20))
+Line(rand*-10,rand*-10,rand*10,rand*10,1,randInt(10,20))
+Line(rand*10,rand*10,rand*-10,rand*-10,1,randInt(10,20))
+Line(rand*10,rand*-10,rand*10,rand*-10,1,randInt(10,20))
+Line(rand*-10,rand*10,rand*-10,rand*10,1,randInt(10,20))
+TextColor(randInt(10,24))
+Text(3,90,"SUBSCRIBE")
+TextColor(randInt(10,24))
+Text(21,115,"TO")
+TextColor(randInt(10,24))
+Text(40,87,"PEWDIEPIE!")
+Goto 1

@@ -1,0 +1,7 @@
+Lbl 1
+getKey→X
+If X!=0
+Then
+Disp X
+End
+Goto 1

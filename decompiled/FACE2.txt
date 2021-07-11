@@ -1,0 +1,8 @@
+Lbl 1
+ClrHome
+Disp "([box]–[box])"
+Pause 
+ClrHome
+Disp "(.–.)"
+Wait .375
+Goto 1

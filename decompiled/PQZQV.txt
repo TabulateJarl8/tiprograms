@@ -1,0 +1,5 @@
+10000→X
+Lbl 1
+randInt(1,X)→X
+Disp X
+Goto 1

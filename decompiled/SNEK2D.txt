@@ -1,0 +1,61 @@
+ClrDraw
+-1→X
+0→Y
+1→A
+0→B
+Lbl 1
+getKey→Z
+If Z=0
+Then
+Goto 1
+Else
+If Z=105
+Then
+Goto 5
+Else
+If Z=26
+Then
+X+0.5→X
+A+0.5→A
+
+Goto 2
+Else
+If Z=24
+Then
+X–0.5→X
+A–0.5→A
+
+Goto 2
+Lbl 2
+Line(X,Y,A,B,1,11)
+Goto 1
+Lbl 5
+0→P
+Repeat P=10
+P+1→P
+A–0.25→A
+B+0.25→B
+Line(X,Y,A,B,1,11)
+End
+0→P
+Repeat P=10
+P+1→P
+A–0.25→A
+B–0.25→B
+Line(X,Y,A,B,1,11)
+End
+0→P
+Repeat P=10
+P+1→P
+A+0.25→A
+B–0.25→B
+Line(X,Y,A,B,1,11)
+End
+0→P
+Repeat P=10
+P+1→P
+A+0.25→A
+B+0.25→B
+Line(X,Y,A,B,1,11)
+End
+Goto 1

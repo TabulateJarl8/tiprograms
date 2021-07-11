@@ -1,0 +1,6 @@
+ClrHome
+Input "WEIGHT ",W
+Input "HEIGHT ",H
+W*H*9.8→X
+ClrHome
+Disp X

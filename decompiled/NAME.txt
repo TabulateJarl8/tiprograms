@@ -1,0 +1,211 @@
+0→Q
+ClrHome
+BackgroundOff
+ClrDraw
+ClrList l1
+0→B
+Lbl 8
+Input "TEXT COLOR: ",L
+If L=WHITE
+Then
+Disp "INVALID COLOR"
+Goto 8
+Else
+ClrHome
+TextColor(L)
+Lbl 1
+getKey→Z
+If Z=105
+Then
+Goto 2
+Else
+If Z=0
+Then
+Goto 1
+Else
+If Z=23
+Then
+B–1→B
+ClrHome
+Disp B
+Goto 1
+Else
+ClrHome
+B+1→B
+Disp B
+Z→l1(B)
+Goto 1
+Lbl 2
+0→X
+0→Y
+0→D
+Lbl 3
+D+1→D
+If D>B
+Then
+Goto 4
+Else
+Goto 6
+Lbl 6
+l1(D)*1→E
+Goto 7
+Lbl 7
+If E=41
+Then
+Text(Y,X,"A")
+Goto 5
+Else
+If E=42
+Then
+Text(Y,X,"B")
+Goto 5
+Else
+If E=43
+Then
+Text(Y,X,"C")
+Goto 5
+Else
+If E=51
+Then
+Text(Y,X,"D")
+Goto 5
+Else
+If E=52
+Then
+Text(Y,X,"E")
+Goto 5
+Else
+If E=53
+Then
+Text(Y,X,"F")
+Goto 5
+Else
+If E=54
+Then
+Text(Y,X,"G")
+Goto 5
+Else
+If E=55
+Then
+Text(Y,X,"H")
+Goto 5
+Else
+If E=61
+Then
+Text(Y,X,"I")
+Goto 5
+Else
+If E=62
+Then
+Text(Y,X,"J")
+Goto 5
+Else
+If E=63
+Then
+Text(Y,X,"K")
+Goto 5
+Else
+If E=64
+Then
+Text(Y,X,"L")
+Goto 5
+Else
+If E=65
+Then
+Text(Y,X,"M")
+Goto 5
+Else
+If E=71
+Then
+Text(Y,X,"N")
+Goto 5
+Else
+If E=72
+Then
+Text(Y,X,"O")
+Goto 5
+Else
+If E=73
+Then
+Text(Y,X,"P")
+Goto 5
+Else
+If E=74
+Then
+Text(Y,X,"Q")
+Goto 5
+Else
+If E=75
+Then
+Text(Y,X,"R")
+Goto 5
+Else
+If E=81
+Then
+Text(Y,X,"S")
+Goto 5
+Else
+If E=82
+Then
+Text(Y,X,"T")
+Goto 5
+Else
+If E=83
+Then
+Text(Y,X,"U")
+Goto 5
+Else
+If E=84
+Then
+Text(Y,X,"V")
+Goto 5
+Else
+If E=85
+Then
+Text(Y,X,"W")
+Goto 5
+Else
+If E=91 or E=32
+Then
+Text(Y,X,"X")
+Goto 5
+Else
+If E=92
+Then
+Text(Y,X,"Y")
+Goto 5
+Else
+If E=93
+Then
+Text(Y,X,"Z")
+Goto 5
+Else
+If E=102
+Then
+Text(Y,X," ")
+Goto 5
+Else
+If E=94
+Then
+Text(Y,X,"[theta]")
+Goto 5
+Else
+If E=103
+Then
+Text(Y,X,":")
+Goto 5
+Else
+If E=104
+Then
+Text(Y,X,"?")
+Goto 5
+Lbl 5
+X+10→X
+If X>250
+Then
+0→X
+15+Y→Y
+Goto 3
+Else
+Goto 3
+Lbl 4

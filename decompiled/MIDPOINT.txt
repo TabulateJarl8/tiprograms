@@ -1,0 +1,19 @@
+ClrHome
+Disp "X1"
+Input X
+ClrHome
+Disp "X2"
+Input A
+ClrHome
+Disp "Y1"
+Input Y
+ClrHome
+Disp "Y2"
+Input B
+X+A→X
+X/2→X
+Y+B→Y
+Y/2→Y
+ClrHome
+Disp X
+Disp Y

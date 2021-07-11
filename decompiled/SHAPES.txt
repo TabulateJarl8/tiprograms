@@ -1,0 +1,50 @@
+ClrHome
+Lbl 1
+Input X
+If X=3
+Then
+Disp "TRIANGLE"
+End
+If X=4
+Then
+Disp "QUADRILATERAL"
+End
+If X=5
+Then
+Disp "PENTAGON"
+End
+If X=6
+Then
+Disp "HEXAGON"
+End
+If X=7
+Then
+Disp "HEPTAGON"
+End
+If X=8
+Then
+Disp "OCTOGON"
+End
+If X=9
+Then
+Disp "NONAGON"
+End
+If X=10
+Then
+Disp "DECAGON"
+End
+If X=11
+Then
+Disp "UNADECAGON"
+End
+If X=12
+Then
+Disp "DODECAGON"
+End
+
+(X–2)180→Y
+Disp "ALL=",Y
+Y/X→Z
+Disp "1INT=",Z
+Disp "1EXT=",360/X
+Goto 1

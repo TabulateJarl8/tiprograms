@@ -1,0 +1,8 @@
+ClrHome
+Input "MASS ",M
+Input "VELOCITY ",V
+(V)^2→V
+M*V→X
+X/2→X
+ClrHome
+Disp X

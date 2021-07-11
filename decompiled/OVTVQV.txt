@@ -1,0 +1,6 @@
+rand*100→X
+Lbl 1
+Disp X
+X*0.99→X
+Disp X
+Goto 1

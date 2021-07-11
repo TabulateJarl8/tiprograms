@@ -1,0 +1,34 @@
+0→M
+0→X
+ClrHome
+Pause 
+Lbl 1
+getTime→l1
+getTime→l2
+While l1(3)=l2(3)
+getTime→l2
+End
+ClrHome
+X+1→X
+Disp X
+getKey→Z
+If Z=105
+Then
+Goto 2
+Else
+Goto 1
+Lbl 2
+If X<60
+Then
+Goto 3
+Else
+Repeat X<60
+X–60→X
+M+1→M
+End
+Lbl 3
+ClrHome
+Disp M
+Disp "                   MINUTES"
+Disp X
+Disp "                   SECONDS"

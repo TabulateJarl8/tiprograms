@@ -1,0 +1,10 @@
+ClrHome
+Input "LENGTH ",L
+Input "WIDTH ",W
+Input "HEIGHT ",H
+2*L*W→A
+2*L*H→B
+2*W*H→C
+A+B+C→X
+ClrHome
+Disp X

@@ -1,0 +1,10 @@
+Input "NUMBER BEING DIVIDED: ",X
+Input "NUMBER DIVIDING BY: ",Y
+0→Z
+Repeat X<Y
+X–Y→X
+Z+1→Z
+End
+Disp Z
+Disp ""
+Disp "REMAINDER",X

@@ -1,0 +1,15 @@
+Real
+ClrHome
+Input "A=",A
+Input "B=",B
+Input "C=",C
+(-B)*1→D
+sqrt(((B^2)–4AC))*1→E
+2A→F
+D+E→G
+G/F→G
+D–E→H
+H/F→H
+ClrHome
+Disp G,"OR",H
+a+bi

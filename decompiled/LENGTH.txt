@@ -1,0 +1,20 @@
+
+Disp "X1"
+Input A
+ClrHome
+Disp "X2"
+Input B
+ClrHome
+Disp "Y1"
+Input C
+ClrHome
+Disp "Y2"
+Input D
+ClrHome
+C–A→A
+D–B→B
+(A)^2→A
+(B)^2→B
+A+B→A
+sqrt(A)→A
+12–
